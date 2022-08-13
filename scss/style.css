@@ -68,10 +68,12 @@ main .section1 .vector1 img {
 
 main .section1 .vector1 p {
   margin: 0;
+  font-weight: bold;
+  padding-left: 10px;
 }
 
 main .section1 .vector2 img {
-  width: 19%;
+  width: 22%;
 }
 
 main .section1 .animation {
