@@ -1,0 +1,207 @@
+nav{
+    background: black;
+
+    .Logo{
+        background-color: white;
+        width: 270px;
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        width: 100%;
+        
+        li{
+            list-style: none;         
+        }
+        a{
+            transition: .2s ease-in-out;
+            &:hover{
+                color: #F78225CC;
+            }
+        }
+    }
+}
+
+main{
+    .section1{
+        position: relative;
+        .text_vector{
+            margin-top: 100px;
+            .bold{
+                font-family: 'Cabinet Grotesk';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 37px;
+                color: #000000;
+            }
+            p{       
+                font-family: 'Cabinet Grotesk';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 25px;
+                color: #000000;
+            }
+        }
+        .vector1{
+            position: absolute;
+            bottom: 0px;
+            img{
+                width: 80%;
+            }
+            p{
+                margin: 0;
+            }
+        }
+        .vector2{
+            img{
+                width: 19%;
+            }
+        }
+        .animation{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 50%;
+            }
+        }
+    }
+    .section2{
+        .iconn{
+            width: 100%;
+            ul{
+                display: flex;
+                justify-content: space-evenly;
+                text-align: center;
+                li{
+                    list-style: none;
+                    
+                }
+            }
+
+        }
+    }
+    .section3{
+        .cont{
+            position: relative;
+            width: 100%;
+            &:hover{
+                .overlay{
+                    opacity: 1;
+                }
+            }
+            .img{
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            
+            .overlay{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .3s ease;
+                background-color: #F78225CC;
+            }
+            .icon{
+                color: white;
+                font-size: 50px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: center;
+            }
+        }
+    }
+    .homeicon{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+        p{
+            margin: 0;
+            padding-left: 10px;
+        }
+        a{
+            color: black;
+        }
+    }
+    .rabbittext{
+        padding-left: 350px;
+        max-width:1000px;
+        h3{
+            font-weight: bold;
+            font-size: 40px;
+
+        }
+    }
+    .othert{
+        margin-top: 30px;
+        p{
+            font-size: 30px;
+            font-weight: bold;
+            color: black;
+        }
+    }
+}
+.mainn{
+    height: 390px;
+    .endcontact{
+        .pp{
+            font-size: 26px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    }
+    .contaktt{
+        color: black;
+        padding-top:80px ;
+        font-weight: bold;
+    }
+}
+
+footer{
+    background-color: black;
+    .logo{
+        background-color: white;
+        width: 200px;
+        margin-top: 30px;
+        img{
+            width: 200px;  
+        }
+    }
+    .setting{
+        margin-top: 30px;
+        p{
+            color: white;
+        }
+    }
+    .contakt{
+        margin-top: 30px;
+        padding-left: 55px;
+        p{
+            color: white;
+        }
+    }
+    .icons{
+        ul{
+            display: flex;
+            justify-content: space-around;
+            padding-top: 20px;
+            li{
+                list-style: none;
+
+            }
+        }
+    }
+}

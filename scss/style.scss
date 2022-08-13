@@ -1,0 +1,16 @@
+@import "mixin";
+@import "varaible";
+@import "home/home";
+
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0%;
+    outline: none;
+    box-sizing: border-box;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}

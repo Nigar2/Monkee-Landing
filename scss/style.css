@@ -1,0 +1,264 @@
+nav {
+  background: black;
+}
+
+nav .Logo {
+  background-color: white;
+  width: 270px;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 30px;
+  width: 100%;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul a {
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+nav ul a:hover {
+  color: #F78225CC;
+}
+
+main .section1 {
+  position: relative;
+}
+
+main .section1 .text_vector {
+  margin-top: 100px;
+}
+
+main .section1 .text_vector .bold {
+  font-family: 'Cabinet Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: #000000;
+}
+
+main .section1 .text_vector p {
+  font-family: 'Cabinet Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000000;
+}
+
+main .section1 .vector1 {
+  position: absolute;
+  bottom: 0px;
+}
+
+main .section1 .vector1 img {
+  width: 80%;
+}
+
+main .section1 .vector1 p {
+  margin: 0;
+}
+
+main .section1 .vector2 img {
+  width: 19%;
+}
+
+main .section1 .animation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .section1 .animation img {
+  width: 50%;
+}
+
+main .section2 .iconn {
+  width: 100%;
+}
+
+main .section2 .iconn ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+}
+
+main .section2 .iconn ul li {
+  list-style: none;
+}
+
+main .section3 .cont {
+  position: relative;
+  width: 100%;
+}
+
+main .section3 .cont:hover .overlay {
+  opacity: 1;
+}
+
+main .section3 .cont .img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+main .section3 .cont .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  background-color: #F78225CC;
+}
+
+main .section3 .cont .icon {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+main .homeicon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+main .homeicon p {
+  margin: 0;
+  padding-left: 10px;
+}
+
+main .homeicon a {
+  color: black;
+}
+
+main .rabbittext {
+  padding-left: 350px;
+  max-width: 1000px;
+}
+
+main .rabbittext h3 {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+main .othert {
+  margin-top: 30px;
+}
+
+main .othert p {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+
+.mainn {
+  height: 390px;
+}
+
+.mainn .endcontact .pp {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.mainn .contaktt {
+  color: black;
+  padding-top: 80px;
+  font-weight: bold;
+}
+
+footer {
+  background-color: black;
+}
+
+footer .logo {
+  background-color: white;
+  width: 200px;
+  margin-top: 30px;
+}
+
+footer .logo img {
+  width: 200px;
+}
+
+footer .setting {
+  margin-top: 30px;
+}
+
+footer .setting p {
+  color: white;
+}
+
+footer .contakt {
+  margin-top: 30px;
+  padding-left: 55px;
+}
+
+footer .contakt p {
+  color: white;
+}
+
+footer .icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 20px;
+}
+
+footer .icons ul li {
+  list-style: none;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0%;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
