@@ -1,0 +1,43 @@
+@mixin bold($f-fam,$f-style,$f-weight,$f-size,$line,$color) {
+    font-family: $f-fam;
+    font-style:$f-style;
+    font-weight: $f-weight;
+    font-size: $f-size;
+    line-height: $line;
+    color: $color;
+}
+@mixin overlay($pos,$top,$bottom,$left,$right,$height,$widht,$opac,$trans,$color) {
+    position: $pos;
+    top: $top;
+    bottom:$bottom;
+    left: $left;
+    right: $right;
+    height: $height;
+    width: $widht;
+    opacity: $opac;
+    transition: $trans;
+    background-color: $color;
+}
+@mixin iconburger($pos,$right,$top,$display,$color,$over) {
+    position:$pos;
+    right: $right;
+    top: $top;
+    display: $display;
+    color:$color;
+    overflow:$over;
+}
+
+@mixin ull($just,$pad,$widht) {
+    justify-content: $just;
+    padding-top: $pad;
+    width: $widht;
+}
+@mixin icon($color,$f-size,$pos,$top,$left,$trans,$t-align) {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

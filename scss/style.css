@@ -1,10 +1,23 @@
 nav {
   background: black;
+  width: 100%;
+}
+
+@media screen and (min-width: 100px) and (max-width: 900px) {
+  nav .container {
+    max-width: 1100px;
+  }
 }
 
 nav .Logo {
   background-color: white;
   width: 270px;
+}
+
+@media screen and (min-width: 100px) and (max-width: 279px) {
+  nav .Logo {
+    overflow: hidden;
+  }
 }
 
 nav ul {
@@ -31,6 +44,32 @@ nav ul a:hover {
   color: #F78225CC;
 }
 
+nav .icon {
+  display: none;
+}
+
+@media screen and (min-width: 100px) and (max-width: 1200px) {
+  nav .topnav {
+    position: relative;
+  }
+  nav .topnav #myLinks {
+    display: none;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  nav .topnav .icon {
+    position: absolute;
+    right: 0px;
+    top: -70px;
+    display: block;
+    color: white;
+    overflow: hidden;
+  }
+  nav .topnav .icon:hover {
+    color: aqua;
+  }
+}
+
 main .section1 {
   position: relative;
 }
@@ -40,26 +79,27 @@ main .section1 .text_vector {
 }
 
 main .section1 .text_vector .bold {
-  font-family: 'Cabinet Grotesk';
+  font-family: "Cabinet Grotesk";
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 37px;
-  color: #000000;
+  color: black;
 }
 
 main .section1 .text_vector p {
-  font-family: 'Cabinet Grotesk';
+  font-family: "Cabinet Grotesk";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
-  color: #000000;
+  color: black;
 }
 
 main .section1 .vector1 {
   position: absolute;
   bottom: 0px;
+  cursor: pointer;
 }
 
 main .section1 .vector1 img {
@@ -70,6 +110,10 @@ main .section1 .vector1 p {
   margin: 0;
   font-weight: bold;
   padding-left: 10px;
+}
+
+main .section1 .vector2 {
+  cursor: pointer;
 }
 
 main .section1 .vector2 img {
@@ -89,6 +133,28 @@ main .section1 .animation img {
   width: 50%;
 }
 
+@media screen and (min-width: 100px) and (max-width: 900px) {
+  main .section1 {
+    overflow: hidden;
+  }
+  main .section1 p {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  main .section1 .vector1 {
+    right: 10px;
+  }
+  main .section1 .vector1 img {
+    width: 90%;
+  }
+  main .section1 .vector1 p {
+    padding: 0;
+  }
+  main .section1 .vector2 {
+    width: 70%;
+  }
+}
+
 main .section2 .iconn {
   width: 100%;
 }
@@ -101,6 +167,7 @@ main .section2 .iconn ul {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   text-align: center;
+  cursor: pointer;
 }
 
 main .section2 .iconn ul li {
@@ -110,6 +177,8 @@ main .section2 .iconn ul li {
 main .section3 .cont {
   position: relative;
   width: 100%;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 main .section3 .cont:hover .overlay {
@@ -131,8 +200,8 @@ main .section3 .cont .overlay {
   height: 100%;
   width: 100%;
   opacity: 0;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   background-color: #F78225CC;
 }
 
@@ -144,7 +213,6 @@ main .section3 .cont .icon {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -181,6 +249,23 @@ main .rabbittext h3 {
   font-size: 40px;
 }
 
+@media screen and (min-width: 100px) and (max-width: 1370px) {
+  main .rabbittext {
+    padding: 0;
+    max-width: 100%;
+  }
+}
+
+main .rabbitimg img {
+  width: 100%;
+}
+
+@media screen and (min-width: 100px) and (max-width: 1370px) {
+  main .rabbitimg {
+    max-width: 100%;
+  }
+}
+
 main .othert {
   margin-top: 30px;
 }
@@ -189,6 +274,11 @@ main .othert p {
   font-size: 30px;
   font-weight: bold;
   color: black;
+}
+
+main .otherimg {
+  margin-top: 20px;
+  max-width: 100%;
 }
 
 .mainn {
@@ -238,6 +328,12 @@ footer .contakt p {
   color: white;
 }
 
+@media screen and (min-width: 100px) and (max-width: 990px) {
+  footer .contakt {
+    padding: 0;
+  }
+}
+
 footer .icons ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -249,6 +345,17 @@ footer .icons ul {
 
 footer .icons ul li {
   list-style: none;
+}
+
+@media screen and (min-width: 100px) and (max-width: 990px) {
+  footer .icons ul {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    text-align: center;
+    padding: 0;
+    gap: 20px;
+  }
 }
 
 *, *::after, *::before {
