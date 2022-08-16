@@ -1,6 +1,9 @@
 nav{
     background: black;
     width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: +1;
 .container{
     @media screen and (min-width:100px) and (max-width:900px) {
         max-width: 1100px;
@@ -49,45 +52,70 @@ nav{
        } 
 }
 main{
+   
     .section1{
         position: relative;
         .text_vector{
-            margin-top: 100px;
+            margin-top: 180px;
             .bold{
              @include bold('Cabinet Grotesk',normal,700,30px,37px,black)
             }
             p{  
                 @include bold('Cabinet Grotesk',normal,400,20px,25px,black)           
             }
+            @media screen and (min-width:100px) and (max-width:900px) {
+                margin: 0;
+            }
         }
         .vector1{
             position: absolute;
             bottom: 0px;
-            cursor: pointer;
+            cursor: pointer;  
             img{
-                width: 80%;
+                width: 80%
             }
             p{
                 margin: 0;
                 font-weight: $fwg;
                 padding-left: 10px;
+                @media screen and (min-width:100px) and (max-width:900px) {
+                   p{
+                    margin: 0;
+                    padding: 0;
+                   }
+                   
+                  
+                  }
             }
+          
         }
         .vector2{
+            position: absolute;
+            right: 120px;
             cursor: pointer;
             img{
-                width: 22%;
+                width: 80%;
+            }
+            @media screen and (min-width:100px) and (max-width:900px) {
+                right: 0;
+                position: static;
+                img{
+                    width: 28%;
+                }
             }
         }
         .animation{
             display: flex;
             justify-content: center;
+            margin-top: 70px;
             img{
                 width: 50%;
+
             }
         }
         @media screen and (min-width:100px) and (max-width:900px) {
             overflow: hidden;
+            
            p{
             text-align: center;
             padding-bottom: 20px;
@@ -108,16 +136,27 @@ main{
            }
     }
     .section2{
+        @media screen and (min-width:100px) and (max-width:1000px) {
+            position: absolute;
+            top: 500px;
+           } 
         .iconn{
             width: 100%;
             ul{
+                margin-left: 7%;
+                margin-top: 20px;
                 display: flex;
+                width: 80%;
                 justify-content: space-evenly;
                 text-align: center;
                 cursor: pointer;
                 li{
                     list-style: none;            
                 }
+                @media screen and (min-width:100px) and (max-width:1000px) {
+                    margin:0;
+                    display: none;
+                   } 
             }
 
         }
@@ -154,18 +193,23 @@ main{
         justify-content: start;
         align-items: center;
         text-align: center;
-        margin-top: 30px;
+        margin-top: 120px;
         p{
             margin: 0;
             padding-left: 10px;
         }
         a{
             color: black;
+            &:hover{
+                color: $orangecolor;
+                font-weight: bold;
+            }
         }
     }
     .rabbittext{
         padding-left: 350px;
         max-width:1000px;
+        margin-top: 30px;
         h3{
             font-weight: $fwg;
             font-size: 40px;
@@ -200,23 +244,60 @@ main{
     }
 }
 .mainn{
-    height: 390px;
+    height: 570px;
+    .homeicon{
+        margin-top: 120px;
+        img{
+            cursor: pointer;
+        }
+        .homep{
+            a{
+    
+                &:hover{
+                    color: $orangecolor;
+                    font-weight: bold;
+                }
+            }
+        }
+        @media screen and (min-width:100px) and (max-width:1000px) {
+           display: none;
+           } 
+    }
     .endcontact{
+        margin-top: 30px;
         .pp{
             font-size: 26px;
             font-weight:$fwg;
             margin-top: 20px;
         }
+        @media screen and (min-width:100px) and (max-width:1000px) {
+            position: absolute;
+            top: 250px;
+           } 
+    }
+    #roww{
+
+        @media screen and (min-width:100px) and (max-width:1000px) {
+            position: relative;
+           } 
     }
     .contaktt{
-        color: black;
-        padding-top:80px ;
-        font-weight:$fwg;
+        img{
+            width: 80%;
+            margin: 30px 0px 0px 70px;
+            @media screen and (min-width:100px) and (max-width:1000px) {
+              margin: 0;
+              position: absolute;
+              top:100px;  
+              padding-left: 20px;
+              } 
+        }
     }
 }
 
 footer{
     background-color: black;
+    padding-bottom: 30px;
     .logo{
         background-color:$white;
         width: 200px;
