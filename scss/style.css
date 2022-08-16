@@ -1,3 +1,14 @@
+body {
+  font-family: "CabinetGrotesk-Black";
+}
+
+@font-face {
+  body {
+    font-family: "CabinetGrotesk-Black";
+    src: url(images/CabinetGrotesk-Black) format(opentype);
+  }
+}
+
 nav {
   background: black;
   width: 100%;
